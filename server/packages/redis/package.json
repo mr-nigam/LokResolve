@@ -1,0 +1,20 @@
+{
+  "name": "@lokresolve/redis",
+  "version": "1.0.0",
+  "description": "Redis client and utilities for LokResolve",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "ioredis": "^6.0.0",
+    "redis": "^5.8.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "@lokresolve/kafka",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "main": "./src/index.js",
+    "types": "src/index.d.ts",
+    "scripts": {
+        "setup": "node ./src/admin/setup.js",
+        "reset": "node ./src/admin/reset.js"
+    },
+    "dependencies": {
+        "dotenv": "^17.4.2",
+        "kafkajs": "^2.2.4"
+    }
+}

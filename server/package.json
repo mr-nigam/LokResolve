@@ -1,0 +1,15 @@
+{
+    "name": "lokresolve",
+    "private": true,
+    "workspaces": [
+        "services/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "kafka:topics": "npm run setup --workspace=@lokresolve/kafka"
+    },
+    "dependencies": {
+        "multer": "^2.4.0",
+        "pg": "^8.23.0"
+    }
+}
