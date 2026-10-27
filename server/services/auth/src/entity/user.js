@@ -1,7 +1,7 @@
 import pool from 
 '../config/postgre.js';
 
-import { 
+import{ 
     createUpdatedAtTrigger
 } from '@lokresolve/utils';
 
@@ -49,11 +49,6 @@ const createUsersTable = async() => {
                     DEFAULT CURRENT_TIMESTAMP
             );    
         `);
-
-        // await pool.query(`
-        //     CREATE INDEX IF NOT EXISTS idx_users_college_id
-        //     ON users(college_id)
-        // `);
         
         await createUpdatedAtTrigger(pool, 'users');
 

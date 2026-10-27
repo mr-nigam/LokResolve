@@ -1,0 +1,30 @@
+{
+  "name": "@lokresolve/complaint-service",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+      "start": "node server.js",
+      "dev": "nodemon src/server.js"
+   },
+   "dependencies" :{
+      "@lokresolve/kafka": "1.0.0",
+      "@lokresolve/utils": "*",
+      "axios": "^1.20.0",
+      "bcrypt": "^6.0.0",
+      "cookie-parser": "^1.4.7",
+      "cors": "^2.8.6",
+      "dotenv": "^17.4.2",
+      "express": "^5.2.1",
+      "node": "^26.5.0",
+      "pg": "^8.22.0",
+      "uuid": "^14.0.1"
+  },
+  "devDependencies": {
+      "concurrently": "^9.2.4",
+      "nodemon": "^3.1.14"
+  }
+}

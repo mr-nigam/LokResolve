@@ -1,7 +1,6 @@
 import '@foodmesh/utils/config/env';
 import app from './app.js';
 
-
 import{
     bootstrapDB
 } from '@lokresolve/utils';
@@ -10,7 +9,6 @@ import {
     connectDB,
     closeDB
 } from './config/postgre.js';
-
 
 
 const startServer = async()=>{
